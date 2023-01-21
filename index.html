@@ -6,240 +6,136 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./components/helper.js"></script>
     <link href="./assets/styles/index.css" rel="stylesheet" />
-    <title>Timeline-of-Computer-History</title>
+    <title>Image Track</title>
   </head>
   <body>
-    <div class="slideshow-container">
+    <nav>
+      <div class="nav-text" id="Gallery">Gallery</div>
+      <div class="nav-text notActive" id="timeLine">Time Line</div>
+    </nav>
 
-      <div class="mySlides fade">
-        <div class="numbertext">1 / 3</div>
-        <img src="https://wallpapercave.com/dwp2x/wp10616070.jpg" style="width:100%">
-        <div class="text">Caption Text</div>
+    <div id="Welcome-screen">
+      <div class="falling-image-track fallingDown">
+        <img
+          class="falling-image fallingDown"
+          draggable="false"
+          src="./assets/images/img1.png"
+        />
+        <img
+          class="falling-image"
+          draggable="false"
+          src="./assets/images/attamaComputer.png"
+        />
+        <img
+          class="falling-image fallingDown"
+          draggable="false"
+          src="./assets/images/bell.png"
+        />
       </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">2 / 3</div>
-        <img src="https://wallpapercave.com/dwp2x/wp6763577.jpg" style="width:100%">
-        <div class="text">Caption Two</div>
+      <div class="falling-image-track">
+        <img
+          class="falling-image riseUp"
+          draggable="false"
+          src="https://wallpapercave.com/dwp2x/HFsWtAz.jpg"
+        />
+        <img
+          class="falling-image zoomImage"
+          draggable="false"
+          src="https://wallpapercave.com/dwp2x/wp4171385.jpg"
+        />
+        <img
+          class="falling-image riseUp"
+          draggable="false"
+          src="https://www.bbvaopenmind.com/wp-content/uploads/2018/02/bardeen-3.jpg"
+        />
       </div>
-      
-      <div class="mySlides fade">
-        <div class="numbertext">3 / 3</div>
-        <img src="https://wallpapercave.com/dwp2x/wp1828918.jpg" style="width:100%">
-        <div class="text">Caption Three</div>
+      <div class="falling-image-track fallingDown">
+        <img
+          class="falling-image fallingDown"
+          draggable="false"
+          src="https://images.csmonitor.com/csmarchives/2011/10/1007_Wozniak.jpg?alias=standard_900x600"
+        />
+        <img
+          class="falling-image"
+          draggable="false"
+          src="https://www.intel.com/content/dam/www/public/us/en/newsroom/posts/galleries/gordon-moore/gordon-moore-16-rwd.jpg.rendition.intel.web.1648.927.jpg"
+        />
+        <img
+          class="falling-image fallingDown"
+          draggable="false"
+          src="https://www.ibm.com/ibm/history/ibm100/images/icp/N847674I31813W60/us__en_us__ibm100__fortran__25_reunion__620x350.jpg"
+        />
       </div>
-      
-      <a class="prev" id="back-button">❮</a>
-      <a class="next" id="next-button">❯</a>
-      
+    </div>
+    <img src="./assets/icons/pluse.png" id="centerIcon" />
+
+    <div id="image-track" mouseDownAt="0" prevPercentage="0" percentage="0">
+      <img class="image" draggable="false" src="./assets/images/img1.png" />
+      <img
+        class="image"
+        draggable="false"
+        src="./assets/images/attamaComputer.png"
+      />
+      <img class="image" draggable="false" src="./assets/images/bell.png" />
+      <img
+        class="image"
+        draggable="false"
+        src="https://wallpapercave.com/dwp2x/HFsWtAz.jpg"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://wallpapercave.com/dwp2x/wp4171385.jpg"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://www.bbvaopenmind.com/wp-content/uploads/2018/02/bardeen-3.jpg"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://images.csmonitor.com/csmarchives/2011/10/1007_Wozniak.jpg?alias=standard_900x600"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://www.intel.com/content/dam/www/public/us/en/newsroom/posts/galleries/gordon-moore/gordon-moore-16-rwd.jpg.rendition.intel.web.1648.927.jpg"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://www.ibm.com/ibm/history/ibm100/images/icp/N847674I31813W60/us__en_us__ibm100__fortran__25_reunion__620x350.jpg"
+      />
+    </div>
+
+    <div id="modalContainer" visible="true">
+      <img id="close-modal" src="./assets//icons/close.png" />
+      <div id="modal-text-icon">
+        <div>
+          <img
+            src="./assets/icons/pluse.png"
+            class="modalPluseIcon"
+            id="leftSlide"
+          />
+        </div>
+        <div>
+          <div id="modalImageDescription">Google Founders</div>
+        </div>
+        <div>
+          <img
+            src="./assets/icons/pluse.png"
+            class="modalPluseIcon"
+            id="rightSlide"
+          />
+        </div>
       </div>
-      <br>
-      
-      <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span> 
-        <span class="dot" onclick="currentSlide(2)"></span> 
-        <span class="dot" onclick="currentSlide(3)"></span> 
-      </div>
-    <h1>Timeline-of-Computer</h1>
 
-    <div style="margin-top: 500px">
-      <ul>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-            <time>1910</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1920</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1930</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1940</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1950</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1960</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1970</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1980</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-        <li>
-          <div>
-            <img
-              style="width: 400px; height: 220px"
-              src="https://wallpapercave.com/dwp1x/wp10509280.jpg"
-            />
-
-            <time>1990</time>
-            <p>
-              A computer is a machine that can be programmed to carry out
-              sequences of arithmetic or logical operations (computation)
-              automatically. Modern digital electronic computers can perform
-              generic sets of operations known as programs. These programs
-              enable computers to perform a wide range of tasks. A computer
-              system is a nominally complete computer that includes the
-              hardware, operating system (main software), and peripheral
-              equipment needed and used for full operation. This term may also
-              refer to a group of computers that are linked and function
-              together, such as a computer network or computer cluster.
-            </p>
-          </div>
-        </li>
-      </ul>
+      <img
+        id="modalImage"
+        draggable="false"
+        src="https://wallpapercave.com/dwp2x/wp4171385.jpg"
+      />
     </div>
   </body>
 </html>

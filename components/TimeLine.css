@@ -8,8 +8,64 @@
 body {
   background: #070017;
 }
+h1{
+  bottom:0;
+  margin-bottom: 100px;
+  margin-left: 10px;
+    position: absolute;
+    font-size: 190px;
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    background: url(../assets/icons/back.png);
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+  
+  }
+  @keyframes back {
+    100%{
+      background-position: 2000px 0;
+    }
+    
+  }
+#earth {
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: url(https://wallpapercave.com/dwp2x/wp9471048.jpg);
+  border-radius: 50%;
+  background-size: 610px;
+  top:50%;
+  left: 36%;
+  transform: translate(0%,-50%);
+  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+  animation-name: rotate;
+  animation-duration: 12s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  -webkit-animation-name: rotate;
+     -webkit-animation-duration: 12s;
+     -webkit-animation-iteration-count: infinite;
+     -webkit-animation-timing-function: linear;
+}
+@keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 610px 0px;
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 610px 0px;
+  }
+}
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -18,23 +74,25 @@ nav{
   z-index: 10000000;
   margin-top: 10px;
 }
-.nav-text{
+.nav-text {
   color: white;
   margin-top: 35px;
   margin-right: 10px;
   cursor: pointer;
   font-weight: bold;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+
 }
-.nav-text:hover{
-  border-bottom:2px solid white;
+.nav-text:hover {
+  border-bottom: 2px solid white;
 }
-.notActive{
+.notActive {
   opacity: 0.5;
 }
-#headerDes{
+#headerDes {
   position: absolute;
   left: 20%;
-  top:35%;
+  top: 35%;
   font-size: 3vw;
   color: white;
 }
@@ -52,11 +110,11 @@ nav{
 
 .message {
   display: flex;
-  position:absolute;
+  position: absolute;
   justify-content: center;
   align-items: center;
   left: 28%;
-  top:50%;
+  top: 50%;
 }
 .message div {
   display: inline-block;
@@ -70,48 +128,59 @@ nav{
   animation: fall 3.5s forwards;
 }
 
-.name{
-    display: flex;
-    position:absolute;
-    justify-content: center;
-    align-items: center;
-    left: 63%;
-    top:60%;
+.name {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 63%;
+  top: 60%;
 }
-.name div{
-    display: inline-block;
-    font-family: "Poppins", sans-serif;
-    font-size: 2vw;
-    font-weight: 700;
-    color: #ffffff;
-    text-shadow: O 15px 25px rgba a(0, 0, 0, 0.2);
-    position: relative;
-    transform: translateY(-100vh);
-    animation: fall 3.5s forwards;
+.name div {
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #ffffff;
+  text-shadow: O 15px 25px rgba a(0, 0, 0, 0.2);
+  position: relative;
+  transform: translateY(-100vh);
+  animation: fall 3.5s forwards;
 }
 .name div:nth-child(2) {
   animation-delay: 0.7s;
-}.name div:nth-child(3) {
+}
+.name div:nth-child(3) {
   animation-delay: 0.9s;
-}.name div:nth-child(3) {
+}
+.name div:nth-child(3) {
   animation-delay: 1.2s;
-}.name div:nth-child(4) {
+}
+.name div:nth-child(4) {
   animation-delay: 1.7s;
-}.name div:nth-child(5) {
+}
+.name div:nth-child(5) {
   animation-delay: 1.9s;
-}.name div:nth-child(6) {
-  animation-delay: 2.0s;
-}.name div:nth-child(7) {
+}
+.name div:nth-child(6) {
+  animation-delay: 2s;
+}
+.name div:nth-child(7) {
   animation-delay: 2.1s;
-}.name div:nth-child(8) {
+}
+.name div:nth-child(8) {
   animation-delay: 2.2s;
-}.name div:nth-child(9) {
+}
+.name div:nth-child(9) {
   animation-delay: 2.3s;
-}.name div:nth-child(10) {
+}
+.name div:nth-child(10) {
   animation-delay: 2.4s;
-}.name div:nth-child(11) {
+}
+.name div:nth-child(11) {
   animation-delay: 2.5s;
-}.name div:nth-child(12) {
+}
+.name div:nth-child(12) {
   animation-delay: 2.6s;
 }
 
@@ -122,42 +191,62 @@ nav{
 }
 .message div:nth-child(2) {
   animation-delay: 0.7s;
-}.message div:nth-child(3) {
+}
+.message div:nth-child(3) {
   animation-delay: 0.9s;
-}.message div:nth-child(3) {
+}
+.message div:nth-child(3) {
   animation-delay: 1.2s;
-}.message div:nth-child(4) {
+}
+.message div:nth-child(4) {
   animation-delay: 1.7s;
-}.message div:nth-child(5) {
+}
+.message div:nth-child(5) {
   animation-delay: 1.9s;
-}.message div:nth-child(6) {
-  animation-delay: 2.0s;
-}.message div:nth-child(7) {
+}
+.message div:nth-child(6) {
+  animation-delay: 2s;
+}
+.message div:nth-child(7) {
   animation-delay: 2.1s;
-}.message div:nth-child(8) {
+}
+.message div:nth-child(8) {
   animation-delay: 2.2s;
-}.message div:nth-child(9) {
+}
+.message div:nth-child(9) {
   animation-delay: 2.3s;
-}.message div:nth-child(10) {
+}
+.message div:nth-child(10) {
   animation-delay: 2.4s;
-}.message div:nth-child(11) {
+}
+.message div:nth-child(11) {
   animation-delay: 2.5s;
-}.message div:nth-child(12) {
+}
+.message div:nth-child(12) {
   animation-delay: 2.6s;
-}.message div:nth-child(13) {
+}
+.message div:nth-child(13) {
   animation-delay: 2.7s;
-}.message div:nth-child(14) {
+}
+.message div:nth-child(14) {
   animation-delay: 2.8s;
-}.message div:nth-child(15) {
+}
+.message div:nth-child(15) {
   animation-delay: 2.9s;
-}.message div:nth-child(16) {
-  animation-delay: 3.0s;
+}
+.message div:nth-child(16) {
+  animation-delay: 3s;
 }
 
 .timeline {
   position: relative;
   max-width: 1200рх;
   margin: 100px auto;
+  border:1px solid white;
+  padding: 20px;
+  margin-left: 50px;
+  margin-right: 50px;;
+  border-radius: 20px;
 }
 .container {
   padding: 10px 50px;
@@ -179,11 +268,16 @@ nav{
 }
 
 .text-box {
-  padding: 20px 30px;
+  padding: 30px;
   background: #fff;
   position: relative;
   border-radius: 6px;
   font-size: 15px;
+}
+.text-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
 }
 
 .left-container {
@@ -254,7 +348,8 @@ nav{
   border-left: 15px solid #fff;
   right: -15px;
 }
-
+.container{
+}
 .right-container-arrow {
   height: 0;
   width: 0;

@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./components/helper.js"></script>
     <link href="./assets/styles/index.css" rel="stylesheet" />
-    <title>Image Track</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=sans"
+    />
+    <title>Gallery</title>
   </head>
   <body>
     <nav>
@@ -19,17 +23,17 @@
         <img
           class="falling-image fallingDown"
           draggable="false"
-          src="./assets/images/img1.png"
+          src="https://initialcommit.com/img/initialcommit/computer-scientists-who-made-history-2.jpg"
         />
         <img
           class="falling-image"
           draggable="false"
-          src="./assets/images/attamaComputer.png"
+          src="https://images.computerhistory.org/timeline/timeline_computers_1953.ibm701.jpg"
         />
         <img
           class="falling-image fallingDown"
           draggable="false"
-          src="./assets/images/bell.png"
+          src="https://images.computerhistory.org/timeline/timeline_computers_1970.amdahl470.jpg"
         />
       </div>
       <div class="falling-image-track">
@@ -41,46 +45,70 @@
         <img
           class="falling-image zoomImage"
           draggable="false"
-          src="https://wallpapercave.com/dwp2x/wp4171385.jpg"
+          src="https://initialcommit.com/img/initialcommit/computer-scientists-who-made-history-10.jpg"
         />
         <img
           class="falling-image riseUp"
           draggable="false"
-          src="https://www.bbvaopenmind.com/wp-content/uploads/2018/02/bardeen-3.jpg"
+          src="https://wallpapercave.com/dwp2x/wp7693974.jpg"
         />
       </div>
       <div class="falling-image-track fallingDown">
         <img
           class="falling-image fallingDown"
           draggable="false"
-          src="https://images.csmonitor.com/csmarchives/2011/10/1007_Wozniak.jpg?alias=standard_900x600"
+          src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i11C7eZxf.eU/v1/1200x-1.jpg"
         />
         <img
           class="falling-image"
           draggable="false"
-          src="https://www.intel.com/content/dam/www/public/us/en/newsroom/posts/galleries/gordon-moore/gordon-moore-16-rwd.jpg.rendition.intel.web.1648.927.jpg"
+          src="https://wallpapercave.com/dwp2x/wp4171385.jpg"
         />
         <img
           class="falling-image fallingDown"
           draggable="false"
-          src="https://www.ibm.com/ibm/history/ibm100/images/icp/N847674I31813W60/us__en_us__ibm100__fortran__25_reunion__620x350.jpg"
+          src="https://images.computerhistory.org/timeline/timeline_computers_1939.hewlettpackard.jpg"
         />
       </div>
     </div>
     <img src="./assets/icons/pluse.png" id="centerIcon" />
 
     <div id="image-track" mouseDownAt="0" prevPercentage="0" percentage="0">
-      <img class="image" draggable="false" src="./assets/images/img1.png" />
       <img
         class="image"
         draggable="false"
-        src="./assets/images/attamaComputer.png"
+        src="https://initialcommit.com/img/initialcommit/computer-scientists-who-made-history-10.jpg"
       />
-      <img class="image" draggable="false" src="./assets/images/bell.png" />
+      <img
+        class="image"
+        draggable="false"
+        src="https://initialcommit.com/img/initialcommit/computer-scientists-who-made-history-2.jpg"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://images.computerhistory.org/timeline/timeline_computers_1953.ibm701.jpg"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://images.computerhistory.org/timeline/timeline_computers_1970.amdahl470.jpg"
+      />
       <img
         class="image"
         draggable="false"
         src="https://wallpapercave.com/dwp2x/HFsWtAz.jpg"
+      />
+
+      <img
+        class="image"
+        draggable="false"
+        src="https://wallpapercave.com/dwp2x/wp7693974.jpg"
+      />
+      <img
+        class="image"
+        draggable="false"
+        src="https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i11C7eZxf.eU/v1/1200x-1.jpg"
       />
       <img
         class="image"
@@ -90,27 +118,17 @@
       <img
         class="image"
         draggable="false"
-        src="https://www.bbvaopenmind.com/wp-content/uploads/2018/02/bardeen-3.jpg"
-      />
-      <img
-        class="image"
-        draggable="false"
-        src="https://images.csmonitor.com/csmarchives/2011/10/1007_Wozniak.jpg?alias=standard_900x600"
-      />
-      <img
-        class="image"
-        draggable="false"
-        src="https://www.intel.com/content/dam/www/public/us/en/newsroom/posts/galleries/gordon-moore/gordon-moore-16-rwd.jpg.rendition.intel.web.1648.927.jpg"
-      />
-      <img
-        class="image"
-        draggable="false"
-        src="https://www.ibm.com/ibm/history/ibm100/images/icp/N847674I31813W60/us__en_us__ibm100__fortran__25_reunion__620x350.jpg"
+        src="https://images.computerhistory.org/timeline/timeline_computers_1939.hewlettpackard.jpg"
       />
     </div>
 
     <div id="modalContainer" visible="true">
-      <img id="close-modal" src="./assets//icons/close.png" />
+      <div id="close-modal">
+        <img
+          src="./assets//icons/close.png"
+          style="height: 100%; width: 100%"
+        />
+      </div>
       <div id="modal-text-icon">
         <div>
           <img
@@ -120,7 +138,7 @@
           />
         </div>
         <div>
-          <div id="modalImageDescription">Google Founders</div>
+          <div id="modalImageDescription">John McCarthyq</div>
         </div>
         <div>
           <img
@@ -134,7 +152,7 @@
       <img
         id="modalImage"
         draggable="false"
-        src="https://wallpapercave.com/dwp2x/wp4171385.jpg"
+        src="https://initialcommit.com/img/initialcommit/computer-scientists-who-made-history-10.jpg"
       />
     </div>
   </body>

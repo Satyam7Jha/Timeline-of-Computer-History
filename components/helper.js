@@ -10,45 +10,49 @@ window.addEventListener("load", () => {
 
 
    const slideContainer = document.getElementById("modalContainer")
-   var slide = 4;
+   var slide = 0;
 
    const slideData = [
       {
-         src:"./assets//images/img1.png",
-         text:"sdfdsfsdfsdf"
+         src:"https://initialcommit.com/img/initialcommit/computer-scientists-who-made-history-10.jpg",
+         text:"John McCarthy"
       },
       {
-         src:"./assets//images/attamaComputer.png",
-         text:"sdfdssdffsdfsdf"
+         src:"https://initialcommit.com/img/initialcommit/computer-scientists-who-made-history-2.jpg",
+         text:"Tim Berners-Lee"
+      },
+     
+      {
+         src:"https://images.computerhistory.org/timeline/timeline_computers_1953.ibm701.jpg",
+         text:"Cuthbert Hurd (IBM)"
       },
       {
-         src:"./assets//images/bell.png",
-         text:"Michael S. Dell"
+         src:"https://images.computerhistory.org/timeline/timeline_computers_1970.amdahl470.jpg",
+         text:"Gene Amdahl"
       },
       {
          src:"https://wallpapercave.com/dwp2x/HFsWtAz.jpg",
          text:"Bill Gates"
       },
+      
+      {
+         src:"https://wallpapercave.com/dwp2x/wp7693974.jpg",
+         text:"Steve Jobs"
+      },
+      {
+         src:"https://assets.bwbx.io/images/users/iqjWHBFdfxIU/i11C7eZxf.eU/v1/1200x-1.jpg",
+         text:"Invented Transistors"
+      },
       {
          src:"https://wallpapercave.com/dwp2x/wp4171385.jpg",
-         text:"Google Founders"
+         text:"Google's Founder"
       },
       {
-         src:"https://www.bbvaopenmind.com/wp-content/uploads/2018/02/bardeen-3.jpg",
-         text:"Invinted Transisitor"
+         src:"https://images.computerhistory.org/timeline/timeline_computers_1939.hewlettpackard.jpg",
+         text:"David & Bill Hewlett"
       },
-      {
-         src:"https://images.csmonitor.com/csmarchives/2011/10/1007_Wozniak.jpg?alias=standard_900x600",
-         text:"Apple 1"
-      },
-      {
-         src:"https://www.intel.com/content/dam/www/public/us/en/newsroom/posts/galleries/gordon-moore/gordon-moore-16-rwd.jpg.rendition.intel.web.1648.927.jpg",
-         text:"Gordon Moore"
-      },
-      {
-         src:"https://www.ibm.com/ibm/history/ibm100/images/icp/N847674I31813W60/us__en_us__ibm100__fortran__25_reunion__620x350.jpg",
-         text:"Developer of FORTRAN"
-      }
+     
+      
    ]
 
 
@@ -83,7 +87,6 @@ window.addEventListener("load", () => {
    
    
    
-            console.log("hii")
             const imageList = track.getElementsByClassName("image")
             for(let i = 0;i<imageList.length;i++ ) {
 
@@ -119,9 +122,11 @@ window.addEventListener("load", () => {
       const slideDes = document.getElementById("modalImageDescription")
       const modalImage = document.getElementById("modalImage");
       const closeButton = document.getElementById("close-modal")
+      const modalImageDescription = document.getElementById("modalImageDescription")
 
       const handleClose=() =>{
          slideContainer.style.visibility = "hidden"
+         console.log("hfdfdf")
       }
 
      
@@ -165,6 +170,9 @@ window.addEventListener("load", () => {
          modalImage.setAttribute("src",slideData[slide]['src']);
          
          slideDes.innerHTML = slideData[slide]['text']
+         modalImageDescription.animate({
+            transform:"translage(50%,50%)"
+         },{duration:1000})
       }
 
       closeButton.addEventListener("click",handleClose)

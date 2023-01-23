@@ -8,26 +8,24 @@
 body {
   background: #070017;
 }
-h1{
-  bottom:0;
-  margin-bottom: 100px;
-  margin-left: 10px;
-    position: absolute;
-    font-size: 190px;
-    color: transparent;
-    -webkit-text-stroke: 1px #fff;
-    background: url(../assets/icons/back.png);
-    -webkit-background-clip: text;
-    background-position: 0 0;
-    animation: back 20s linear infinite;
-  
+h1 {
+  position: absolute;
+  left: 20%;
+  top: 35%;
+  font-size: 3vw;
+
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  background: url(../assets/icons/back.png);
+  -webkit-background-clip: text;
+  background-position: 0 0;
+  animation: back 20s linear infinite;
+}
+@keyframes back {
+  100% {
+    background-position: 2000px 0;
   }
-  @keyframes back {
-    100%{
-      background-position: 2000px 0;
-    }
-    
-  }
+}
 #earth {
   position: absolute;
   width: 400px;
@@ -35,18 +33,19 @@ h1{
   background: url(https://wallpapercave.com/dwp2x/wp9471048.jpg);
   border-radius: 50%;
   background-size: 610px;
-  top:50%;
+  top: 50%;
   left: 36%;
-  transform: translate(0%,-50%);
-  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0), inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
+  transform: translate(0%, -50%);
+  box-shadow: inset 8px 36px 80px 36px rgb(0, 0, 0),
+    inset -6px 0 12px 4px rgba(255, 255, 255, 0.3);
   animation-name: rotate;
   animation-duration: 12s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   -webkit-animation-name: rotate;
-     -webkit-animation-duration: 12s;
-     -webkit-animation-iteration-count: infinite;
-     -webkit-animation-timing-function: linear;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
 }
 @keyframes rotate {
   from {
@@ -81,7 +80,6 @@ nav {
   cursor: pointer;
   font-weight: bold;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-
 }
 .nav-text:hover {
   border-bottom: 2px solid white;
@@ -242,10 +240,10 @@ nav {
   position: relative;
   max-width: 1200рх;
   margin: 100px auto;
-  border:1px solid white;
+  border: 1px solid white;
   padding: 20px;
   margin-left: 50px;
-  margin-right: 50px;;
+  margin-right: 50px;
   border-radius: 20px;
 }
 .container {
@@ -348,7 +346,7 @@ nav {
   border-left: 15px solid #fff;
   right: -15px;
 }
-.container{
+.container {
 }
 .right-container-arrow {
   height: 0;

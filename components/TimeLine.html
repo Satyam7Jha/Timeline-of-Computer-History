@@ -1,719 +1,814 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./TimeLine.css" />
-  <link
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./TimeLine.css" />
+    <script src="./timeLineAnimaton.js"></script>
+    <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=sans"
     />
-  <title>Time-Line</title>
-</head>
+    <title>Time-Line</title>
+  </head>
 
-<body>
-  <nav>
-    <div class="nav-text notActive" id="Gallery">Gallery</div>
-    <div class="nav-text" id="timeLine">TimeLine</div>
-  </nav>
-  <div id="earth"></div>
-  <header class="header-container">
-    <div class="message">
-      <div>C</div>
-      <div>o</div>
-      <div>m</div>
-      <div>p</div>
-      <div>u</div>
-      <div>t</div>
-      <div>e</div>
-      <div>r</div>
-      <div>-</div>
-      <div>T</div>
-      <div>i</div>
-      <div>m</div>
-      <div>e</div>
-      <div>l</div>
-      <div>i</div>
-      <div>n</div>
-      <div>e</div>
-    </div>
-    <div class="name">
-      <div>B</div>
-      <div>y</div>
-      <div>-</div>
-      <div>s</div>
-      <div>a</div>
-      <div>t</div>
-      <div>y</div>
-      <div>a</div>
-      <div>m</div>
-    </div>
-    <h1>"The Machine Which Change The World Forever"</h1>
-    <!-- <div id="headerDes"></div> -->
-    <img id="headerMedia" src="https://wallpapercave.com/dwp2x/wp9164133.jpg" />
-  </header>
-  <div class="timeline">
-    <div class="container left-container">
-      <div id="year">1941</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1941.zusez3.jpg" />
-        <h2>Z3 Computer.</h2>
-        <small>2018 - 2019</small>
-        <p>
-          The Z3, an early computer built by German engineer Konrad Zuse
-          working in complete isolation from developments elsewhere, uses
-          2,300 relays, performs floating point binary arithmetic, and has a
-          22-bit word length. The Z3 was used for aerodynamic calculations but
-          was destroyed in a bombing raid on Berlin in late 1943.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1942</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1942.abc.jpg" />
-        <h2>Alphabet Inc.</h2>
-        <small>2018 - 2019</small>
-        <p>
-          After successfully demonstrating a proof-of-concept prototype in
-          1939, Professor John Vincent Atanasoff receives funds to build a
-          full-scale machine at Iowa State College (now University). The
-          machine was designed and built by Atanasoff and graduate student
-          Clifford Berry between 1939 and 1942.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">1944</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1944.harvardmarkI.jpg" />
-        <h2>AHarvard Mark 1</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Conceived by Harvard physics professor Howard Aiken, and designed
-          and built by IBM, the Harvard Mark 1 is a room-sized, relay-based
-          calculator. The machine had a fifty-foot long camshaft running the
-          length of machine that synchronized the machine’s thousands of
-          component parts and used 3,500 relays.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1948</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1948.manchesterbaby.jpg" />
-        <h2>First Program to run on Computer.</h2>
-        <small>2018 - 2019</small>
-        <p>
-          University of Manchester researchers Frederic Williams, Tom Kilburn,
-          and Geoff Toothill develop the Small-Scale Experimental Machine
-          (SSEM), better known as the Manchester "Baby." The Baby was built to
-          test a new memory technology developed by Williams and Kilburn --
-          soon known as the Williams Tube – which was the first high-speed
-          electronic random access memory for computers.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">1951</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1951.ferranti.markI.jpg" />
-        <h2>AFerranti Mark I sold.</h2>
-        <small>2018 - 2019</small>
-        <p>
-          The title of “first commercially available general-purpose computer”
-          probably goes to Britain’s Ferranti Mark I for its sale of its first
-          Mark I computer to Manchester University. The Mark 1 was a
-          refinement of the experimental Manchester “Baby” and Manchester Mark
-          1 computers, also at Manchester University.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1952</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1952.maniac.jpg" />
-        <h2>IAS computer operational</h2>
-        <small>2018 - 2019</small>
-        <p>
-          The Institute of Advanced Study (IAS) computer is a multi-year
-          research project conducted under the overall supervision of
-          world-famous mathematician John von Neumann. The notion of storing
-          both data and instructions in memory became known as the ‘stored
-          program concept’ to distinguish it from earlier methods of
-          instructing a computer.
-          <span class="right-container-arrow"></span>
-        </p>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">1954</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1944.harvardmarkI.jpg" />
-        <h2>IBM 650 magnetic drum calculator.</h2>
-        <small>2018 - 2019</small>
-        <p>
-          IBM establishes the 650 as its first mass-produced computer, with
-          the company selling 450 in just one year. Spinning at 12,500 rpm,
-          the 650´s magnetic data-storage drum allowed much faster access to
-          stored information than other drum-based machines. The Model 650 was
-          also highly popular in universities, where a generation of students
-          first learned programming.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1961</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1959.stretch.jpg" />
-        <h2>IBM 7030 (“Stretch”)</h2>
-        <small>2018 - 2019</small>
-        <p>
-          IBM´s 7000 series of mainframe computers are the company´s first to
-          use transistors. At the top of the line was the Model 7030, also
-          known as "Stretch." Nine of the computers, which featured dozens of
-          advanced design innovations, were sold, mainly to national
-          laboratories and major scientific users. A special version, known as
-          HARVEST, was developed for the US National Security Agency (NSA).
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">1962</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1944.harvardmarkI.jpg" />
-        <h2>MIT LINC</h2>
-        <small>2018 - 2019</small>
-        <p>
-          The LINC is an early and important example of a ‘personal computer,’
-          that is, a computer designed for only one user. It was designed by
-          MIT Lincoln Laboratory engineer Wesley Clark. Under the auspices of
-          a National Institutes of Health (NIH) grant, biomedical research
-          faculty from around the United States came to a workshop at MIT to
-          build their own LINCs, and then bring them back to their home
-          institutions where they would be used.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1964</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1964.cdc6600.jpg" />
-        <h2>CDC 6600 supercomputer</h2>
-        <small>2018 - 2019</small>
-        <p>
-          The Control Data Corporation (CDC) 6600 performs up to 3 million
-          instructions per second —three times faster than that of its closest
-          competitor, the IBM 7030 supercomputer. The 6600 retained the
-          distinction of being the fastest computer in the world until
-          surpassed by its successor, the CDC 7600, in 1968.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">1968</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1944.harvardmarkI.jpg" />
-        <h2>Apollo Guidance Computer (AGC).</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Designed by scientists and engineers at MIT’s Instrumentation
-          Laboratory, the Apollo Guidance Computer (AGC) is the culmination of
-          years of work to reduce the size of the Apollo spacecraft computer
-          from the size of seven refrigerators side-by-side to a compact unit
-          weighing only 70 lbs. and taking up a volume of less than 1 cubic
-          foot. The AGC’s first flight was on Apollo 7. A year later, it
-          steered Apollo 11 to the lunar surface.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1971</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1971.4004.jpg" />
-        <h2>Intel introduces the first microprocessor</h2>
-        <small>2018 - 2019</small>
-        <p>
-          The first advertisement for a microprocessor, the Intel 4004,
-          appears in Electronic News. Developed for Busicom, a Japanese
-          calculator maker, the 4004 had 2250 transistors and could perform up
-          to 90,000 operations per second in four-bit chunks. Federico Faggin
-          led the design and Ted Hoff led the architecture.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">1975</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1975.mitsaltair.jpg" />
-        <h2>MITS Altair 8800</h2>
-        <small>2018 - 2019</small>
-        <p>
-          For its January issue, hobbyist magazine Popular Electronics runs a
-          cover story of a new computer kit – the Altair 8800. Within weeks of
-          its appearance, customers inundated its maker, MITS, with orders.
-          Bill Gates and Paul Allen licensed their BASIC programming language
-          interpreter to MITS as the main language for the Altair. MITS
-          co-founder Ed Roberts invented the Altair 8800 — which sold for
-          $297, or $395 with a case — and coined the term “personal computer”.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1976</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1976.appleI.jpg" />
-        <h2>Steve Wozniak completes the Apple-1</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Designed by Sunnyvale, California native Steve Wozniak, and marketed
-          by his friend Steve Jobs, the Apple-1 is a single-board computer for
-          hobbyists. With an order for 50 assembled systems from Mountain
-          View, California computer store The Byte Shop in hand, the pair
-          started a new company, naming it Apple Computer, Inc. In all, about
-          200 of the boards were sold before Apple announced the follow-on
-          Apple II a year later as a ready-to-use computer for consumers, a
-          model which sold in the millions for nearly two decades.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-
-    <div class="container left-container">
-      <div id="year">1977</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1977.appleII.jpg" />
-        <h2>Apple II</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Sold complete with a main logic board, switching power supply, keyboard, case, manual, game paddles, and
-          cassette tape containing the game Breakout, the Apple-II finds popularity far beyond the hobbyist community
-          which made up Apple’s user community until then. When connected to a color television set, the Apple II
-          produced
-          brilliant color graphics for the time. Millions of Apple IIs were sold between 1977 and 1993, making it one of
-          the longest-lived lines of personal computers. Apple gave away thousands of Apple IIs to school, giving a new
-          generation their first access to personal computers.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1979</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1979.atari400-800.jpg" />
-        <h2>Atari introduces its Model 400 and 800 computers</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Shortly after delivery of the Atari VCS game console, Atari designs two microcomputers with game capabilities:
-          the Model 400 and Model 800. The 400 served primarily as a game console, while the 800 was more of a home
-          computer. Both faced strong competition from the Apple II, Commodore PET, and TRS-80 computers. Atari's 8-bit
-          computers were influential in the arts, especially in the emerging DemoScene culture of the 1980s and '90s.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">1981</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1981.computerprogramme.jpg" />
-        <h2>The Computer Programme debuts on the BBC</h2>
-        <small>2018 - 2019</small>
-        <p>
-          The British Broadcasting Corporation’s Computer Literacy Project hoped “to introduce interested adults to the
-          world of computers.” Acorn produces a popular computer, the BBC Microcomputer System, so viewers at home could
-          follow along on their own home computers as they watched the program. The machine was expandable, with ports
-          for
-          cassette storage, serial interface and rudimentary networking.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1983</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1983.lisa.jpg" />
-        <h2>Apple introduces the Lisa computer</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Lisa is the first commercial personal computer with a graphical user interface (GUI). It was thus an important
-          milestone in computing as soon Microsoft Windows and the Apple Macintosh would soon adopt the GUI as their
-          user
-          interface, making it the new paradigm for personal computing. The Lisa ran on a Motorola 68000 microprocessor
-          and came equipped with 1 MB of RAM, a 12-inch black-and-white monitor, dual 5.25-inch floppy disk drives and a
-          5
-          MB “Profile” hard drive. Lisa itself, and especially its GUI, were inspired by earlier work at the Xerox Palo
-          Alto Research Center.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">1984</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1984.applemacintosh.jpg" />
-        <h2>Apple Computer launches the Macintosh</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Apple introduces the Macintosh with a television commercial during the 1984 Super Bowl, which plays on the
-          theme
-          of totalitarianism in George Orwell´s book 1984. The ad featured the destruction of “Big Brother” – a veiled
-          reference to IBM -- through the power of personal computing found in a Macintosh. The Macintosh was the first
-          successful mouse-driven computer with a graphical user interface and was based on the Motorola 68000
-          microprocessor. Its price was $2,500. Applications that came as part of the package included MacPaint, which
-          made use of the mouse, and MacWrite, which demonstrated WYSIWYG (What You See Is What You Get) word
-          processing.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1976</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1976.appleI.jpg" />
-        <h2>Steve Wozniak completes the Apple-1</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Designed by Sunnyvale, California native Steve Wozniak, and marketed
-          by his friend Steve Jobs, the Apple-1 is a single-board computer for
-          hobbyists. With an order for 50 assembled systems from Mountain
-          View, California computer store The Byte Shop in hand, the pair
-          started a new company, naming it Apple Computer, Inc. In all, about
-          200 of the boards were sold before Apple announced the follow-on
-          Apple II a year later as a ready-to-use computer for consumers, a
-          model which sold in the millions for nearly two decades.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">1985</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1985.pcslimited.jpg" />
-        <h2>PC's Limited is founded</h2>
-        <small>2018 - 2019</small>
-        <p>
-          In 1984, Michael Dell creates PC's Limited while still a student of the University of Texas at Austin. The
-          dorm-room headquartered company sold IBM PC-compatible computers built from stock components. Dell dropped out
-          of school to focus on his business and in 1985, the company produced the first computer of its own design, the
-          Turbo PC, which sold for $795. By the early 1990s, Dell became one of the leading computer retailers.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1986</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1986.compaq-deskpro-386.jpg" />
-        <h2>IBM releases the first commercial RISC-based workstation</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Compaq beats IBM to the market when it announces the Deskpro 386, the first computer on the market to use
-          Intel´s new 80386 chip, a 32-bit microprocessor with 275,000 transistors on each chip. At 4 million operations
-          per second and 4 kilobytes of memory, the 80386 gave PCs as much speed and power as older mainframes and
-          minicomputers.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">1988</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1988.next.jpg" />
-        <h2>Apple co-founder Steve Jobs unveils the NeXT Cube</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Steve Jobs, forced out of Apple in 1985, founds a new company – NeXT. The computer he created, an all-black
-          cube
-          was an important innovation. The NeXT had three Motorola microprocessors and 8 MB of RAM. Its base price was
-          $6,500. Some of its other innovations were the inclusion of a magneto-optical (MO) disk drive, a digital
-          signal
-          processor and the NeXTSTEP programming environment (later released as OPENSTEP).
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1989</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1989.486.jpg" />
-        <h2>Intel introduces the 80486 microprocessor</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Intel released the 80486 microprocessor and the i860 RISC/coprocessor chip, each of which contained more than
-          1
-          million transistors. The RISC microprocessor had a 32-bit integer arithmetic and logic unit (the part of the
-          CPU
-          that performs operations such as addition and subtraction), a 64-bit floating-point unit, and a clock rate of
-          33
-          MHz.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">1993</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1993.newton.jpg" />
-        <h2>Apple ships the first Newton</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Apple enters the handheld computer market with the Newton. Dubbed a “Personal Data Assistant” by Apple
-          President
-          John Scully in 1992, the Newton featured many of the features that would define handheld computers in the
-          following decades. The handwriting recognition software was much maligned for inaccuracy. The Newton line
-          never
-          performed as well as hoped and was discontinued in 1998.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">1998</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_1998.imac.jpg" />
-        <h2>The iMac, a range of all-in-one Macintosh desktop computers, is launched</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Apple makes a splash with its Bondi Blue iMac, which sells for about $1,300. Customers got a machine with a
-          233-MHz G3 processor, 4GB hard drive, 32MB of RAM, a CD-ROM drive, and a 15" monitor. The machine was noted
-          for
-          its ease-of-use and included a 'manual' that contained only a few pictures and less than 20 words. As Apple’s
-          first new product under the leadership of a returning Steve Jobs, many consider this the most significant step
-          in Apple's return from near-bankruptcy in the middle 1990s.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">2000</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_2000.Sharp_Jphone.jpg" />
-        <h2>First camera phone introduced</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Japan's SoftBank introduces the first camera phone, the J-Phone J-SH04; a Sharp-manufactured digital phone
-          with
-          integrated camera. The camera had a maximum resolution of 0.11 megapixels a 256-color display, and photos
-          could
-          be shared wirelessly. The J-Phone line would quickly expand, releasing a flip-phone version just a month
-          later.
-          Cameras would become a significant part of most phones within a year, and several countries have even passed
-          laws regulating their use.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">2002</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_2002.Earth_simulator_ES2.jpg" />
-        <h2>Earth Simulator is world's fastest supercomputer</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Developed by the Japanese government to create global climate models, the Earth Simulator is a massively
-          parallel, vector-based system that costs nearly 60 billion yen (roughly $600 million at the time). A
-          consortium of aerospace, energy, and marine science agencies undertook the project, and the system was built
-          by NEC around their SX-6 architecture. To protect it from earthquakes, the building housing it was built using
-          a seismic isolation system that used rubber supports. The Earth Simulator was listed as the fastest
-          supercomputer in the world from 2002 to 2004.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">1975</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_1975.mitsaltair.jpg" />
-        <h2>MITS Altair 8800</h2>
-        <small>2018 - 2019</small>
-        <p>
-          For its January issue, hobbyist magazine Popular Electronics runs a
-          cover story of a new computer kit – the Altair 8800. Within weeks of
-          its appearance, customers inundated its maker, MITS, with orders.
-          Bill Gates and Paul Allen licensed their BASIC programming language
-          interpreter to MITS as the main language for the Altair. MITS
-          co-founder Ed Roberts invented the Altair 8800 — which sold for
-          $297, or $395 with a case — and coined the term “personal computer”.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">2003</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_2003.Power_Mac_G5.jpg" />
-        <h2>PowerMac G5 is released</h2>
-        <small>2018 - 2019</small>
-        <p>
-          With a distinctive anodized aluminum case, and hailed as the first true 64-bit personal computer, the Apple G5
-          is the most powerful Macintosh ever released to that point. While larger than the previous G4 towers, the G5
-          had comparatively limited space for expansion. Virginia Tech used more than a thousand PowerMac G5s to create
-          the System X cluster supercomputer, rated #3 in November of that year on the world’s TOP500 fastest computers.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-
-    <div class="container left-container">
-      <div id="year">2005</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_2005_arduino.jpg" />
-        <h2>Arduino</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Harkening back to the hobbyist era of personal computing in the 1970s, Arduino begins as a project of the
-          Interaction Design Institute, Ivrea, Italy. Each credit card-sized Arduino board consisted of an inexpensive
-          microcontroller and signal connectors which made Arduinos ideal for use in any application connecting to or
-          monitoring the outside world.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">2007</div>
-      <div class="text-box">
-        <img draggable="false" src="https://images.computerhistory.org/timeline/timeline_computers_2007.iphone.jpg" />
-        <h2>The Apple iPhone is released</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Apple launches the iPhone - a combination of web browser, music player and cell phone - which could download
-          new functionality in the form of "apps" (applications) from the online Apple store. The touchscreen enabled
-          smartphone also had built-in GPS navigation, high-definition camera, texting, calendar, voice dictation, and
-          weather reports.
-        </p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">2008</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_2008.macbookair.jpg" />
-        <h2>The MacBook Air </h2>
-        <small>2018 - 2019</small>
-        <p>
-          Apple introduces their first ultra notebook – a light, thin laptop with high-capacity battery. The Air
-          incorporated many of the technologies that had been associated with Apple's MacBook line of laptops, including
-          integrated camera, and Wi-Fi capabilities. To reduce its size, the traditional hard drive was replaced with a
-          solid-state disk, the first mass-market computer to do so.
-        </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container right-container">
-      <div id="year">2009</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_2009.roadrunner.jpg" />
-        <h2>IBM's Roadrunner supercomputer is completed</h2>
-        <small>2018 - 2019</small>
-        <p>The Roadrunner is the first computer to reach a sustained performance of 1 petaflop (one thousand trillion
-          floating point operations per second). It used two different microprocessors: an IBM POWER XCell L8i and AMD
-          Opteron. It was used to model the decay of the US nuclear arsenal, analyze financial data, and render 3D
-          medical images in real-time. An offshoot of the POWER XCell8i chip was used as the main processor in the Sony
-          PlayStation 3 game console.</p>
-        <span class="right-container-arrow"></span>
-      </div>
-    </div>
-
-    <div class="container left-container">
-      <div id="year">2010</div>
-      <div class="text-box">
-        <img draggable="false"
-          src="https://images.computerhistory.org/timeline/timeline_computers_2012_appleretina.jpg" />
-        <h2>Apple Retina Display</h2>
-        <small>2018 - 2019</small>
-        <p>
-          Since the release of the Macintosh in 1984, Apple has placed emphasis on high-resolution graphics and display
-          technologies. In 2012, Apple introduced the Retina display for the MacBook Pro laptop and iPad tablet. With a
-          screen resolution of up to 400 pixels-per-inch (PPI), Retina displays approached the limit of pixel visibility
-          to the human eye. The display also used In Plane Switching (IPS) technology, which allowed for a wider viewing
-          angle and improved color accuracy. The Retina display became standard on most of the iPad, iPhone, MacBook,
-          and Apple Watch product lines. </p>
-        <span class="left-container-arrow"></span>
-      </div>
-    </div>
-    <script>
-      const gallery = document.getElementById("Gallery");
-      gallery.addEventListener("click", () =>
-        window.open("../index.html", "_self")
-      );
-      const timeLine = document.getElementById("timeLine");
-      timeLine.addEventListener("click", () =>
-        window.open("./TimeLine.html", "_self")
-      );
+  <body>
+    <nav>
+      <div class="nav-text notActive" id="Gallery">Gallery</div>
+      <div class="nav-text" id="timeLine">TimeLine</div>
+    </nav>
+    <div id="earth"></div>
+    <div class="cursor"></div>
+    <script type="text/javascript">
+      const cursor = document.querySelector(".cursor");
+      document.addEventListener("mousemove", (e) => {
+        let x = e.pageX;
+        let y = e.pageY;
+        cursor.style.top = y + "px";
+        cursor.style.left = x + "px";
+      });
     </script>
-</body>
 
+    <header class="header-container">
+      <div class="message">
+        <div>C</div>
+        <div>o</div>
+        <div>m</div>
+        <div>p</div>
+        <div>u</div>
+        <div>t</div>
+        <div>e</div>
+        <div>r</div>
+        <div>-</div>
+        <div>T</div>
+        <div>i</div>
+        <div>m</div>
+        <div>e</div>
+        <div>l</div>
+        <div>i</div>
+        <div>n</div>
+        <div>e</div>
+      </div>
+      <div class="name">
+        <div>B</div>
+        <div>y</div>
+        <div>-</div>
+        <div>s</div>
+        <div>a</div>
+        <div>t</div>
+        <div>y</div>
+        <div>a</div>
+        <div>m</div>
+      </div>
+      <h1>"The Machine Which Change The World Forever"</h1>
+      <!-- <div id="headerDes"></div> -->
+      <img
+        id="headerMedia"
+        src="https://wallpapercave.com/dwp2x/wp9164133.jpg"
+      />
+    </header>
+
+    <section>
+      <ul style="margin-top:-50px">
+        <li>
+          <div>
+            <div id="year-right">1941</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1941.zusez3.jpg"
+            />
+            <header id="text-des">Z3 Computer</header>
+            <p>
+              The Z3, an early computer built by German engineer Konrad Zuse
+              working in complete isolation from developments elsewhere, uses
+              2,300 relays, performs floating point binary arithmetic, and has a
+              22-bit word length. The Z3 was used for aerodynamic calculations
+              but was destroyed in a bombing raid on Berlin in late 1943.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1942</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1942.abc.jpg"
+            />
+
+            <header id="text-des">Alphabet Inc</header>
+            <p>
+              After successfully demonstrating a proof-of-concept prototype in
+              1939, Professor John Vincent Atanasoff receives funds to build a
+              full-scale machine at Iowa State College (now University). The
+              machine was designed and built by Atanasoff and graduate student
+              Clifford Berry between 1939 and 1942.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1944</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1944.harvardmarkI.jpg"
+            />
+            <header id="text-des">Harvard Mark 1</header>
+            <p>
+              Conceived by Harvard physics professor Howard Aiken, and designed
+              and built by IBM, the Harvard Mark 1 is a room-sized, relay-based
+              calculator. The machine had a fifty-foot long camshaft running the
+              length of machine that synchronized the machine’s thousands of
+              component parts and used 3,500 relays.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1948</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1948.manchesterbaby.jpg"
+            />
+
+            <header id="text-des">First Program to run on Computer.</header>
+            <p>
+              University of Manchester researchers Frederic Williams, Tom
+              Kilburn, and Geoff Toothill develop the Small-Scale Experimental
+              Machine (SSEM), better known as the Manchester "Baby." The Baby
+              was built to test a new memory technology developed by Williams
+              and Kilburn -- soon known as the Williams Tube – which was the
+              first high-speed electronic random access memory for computers.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1951</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1951.ferranti.markI.jpg"
+            />
+
+            <header id="text-des">Ferranti Mark I sold.</header>
+            <p>
+              The title of “first commercially available general-purpose
+              computer” probably goes to Britain’s Ferranti Mark I for its sale
+              of its first Mark I computer to Manchester University. The Mark 1
+              was a refinement of the experimental Manchester “Baby” and
+              Manchester Mark 1 computers, also at Manchester University.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1952</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1952.maniac.jpg"
+            />
+            <header id="text-des">IAS computer operational</header>
+            <p>
+              The Institute of Advanced Study (IAS) computer is a multi-year
+              research project conducted under the overall supervision of
+              world-famous mathematician John von Neumann. The notion of storing
+              both data and instructions in memory became known as the ‘stored
+              program concept’ to distinguish it from earlier methods of
+              instructing a computer.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1954</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1941.zusez3.jpg"
+            />
+            <header id="text-des">IBM 650 magnetic drum calculator.</header>
+            <p>
+              IBM establishes the 650 as its first mass-produced computer, with
+              the company selling 450 in just one year. Spinning at 12,500 rpm,
+              the 650´s magnetic data-storage drum allowed much faster access to
+              stored information than other drum-based machines. The Model 650
+              was also highly popular in universities, where a generation of
+              students first learned programming.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1961</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1959.stretch.jpg"
+            />
+
+            <header id="text-des">IBM 7030 (“Stretch”)</header>
+            <p>
+              IBM´s 7000 series of mainframe computers are the company´s first
+              to use transistors. At the top of the line was the Model 7030,
+              also known as "Stretch." Nine of the computers, which featured
+              dozens of advanced design innovations, were sold, mainly to
+              national laboratories and major scientific users. A special
+              version, known as HARVEST, was developed for the US National
+              Security Agency (NSA).
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1962</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1944.harvardmarkI.jpg"
+            />
+
+            <header id="text-des">MIT LINC</header>
+            <p>
+              The LINC is an early and important example of a ‘personal
+              computer,’ that is, a computer designed for only one user. It was
+              designed by MIT Lincoln Laboratory engineer Wesley Clark. Under
+              the auspices of a National Institutes of Health (NIH) grant,
+              biomedical research faculty from around the United States came to
+              a workshop at MIT to build their own LINCs, and then bring them
+              back to their home institutions where they would be used.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1964</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1964.cdc6600.jpg"
+            />
+
+            <header id="text-des">CDC 6600 supercomputer</header>
+            <p>
+              The Control Data Corporation (CDC) 6600 performs up to 3 million
+              instructions per second —three times faster than that of its
+              closest competitor, the IBM 7030 supercomputer. The 6600 retained
+              the distinction of being the fastest computer in the world until
+              surpassed by its successor, the CDC 7600, in 1968.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1968</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1944.harvardmarkI.jpg"
+            />
+            <header id="text-des">Apollo Guidance Computer (AGC).</header>
+            <p>
+              Designed by scientists and engineers at MIT’s Instrumentation
+              Laboratory, the Apollo Guidance Computer (AGC) is the culmination
+              of years of work to reduce the size of the Apollo spacecraft
+              computer from the size of seven refrigerators side-by-side to a
+              compact unit weighing only 70 lbs. and taking up a volume of less
+              than 1 cubic foot. The AGC’s first flight was on Apollo 7. A year
+              later, it steered Apollo 11 to the lunar surface.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1971</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1971.4004.jpg"
+            />
+
+            <header id="text-des">
+              Intel introduces the first microprocessor
+            </header>
+            <p>
+              The first advertisement for a microprocessor, the Intel 4004,
+              appears in Electronic News. Developed for Busicom, a Japanese
+              calculator maker, the 4004 had 2250 transistors and could perform
+              up to 90,000 operations per second in four-bit chunks. Federico
+              Faggin led the design and Ted Hoff led the architecture.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1975</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1975.mitsaltair.jpg"
+            />
+            <header id="text-des">MITS Altair 8800</header>
+            <p>
+              For its January issue, hobbyist magazine Popular Electronics runs
+              a cover story of a new computer kit – the Altair 8800. Within
+              weeks of its appearance, customers inundated its maker, MITS, with
+              orders. Bill Gates and Paul Allen licensed their BASIC programming
+              language interpreter to MITS as the main language for the Altair.
+              MITS co-founder Ed Roberts invented the Altair 8800 — which sold
+              for $297, or $395 with a case — and coined the term “personal
+              computer”.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1976</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1976.appleI.jpg"
+            />
+
+            <header id="text-des">Steve Wozniak completes the Apple-1</header>
+            <p>
+              Designed by Sunnyvale, California native Steve Wozniak, and
+              marketed by his friend Steve Jobs, the Apple-1 is a single-board
+              computer for hobbyists. With an order for 50 assembled systems
+              from Mountain View, California computer store The Byte Shop in
+              hand, the pair started a new company, naming it Apple Computer,
+              Inc. In all, about 200 of the boards were sold before Apple
+              announced the follow-on Apple II a year later as a ready-to-use
+              computer for consumers, a model which sold in the millions for
+              nearly two decades.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1977</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1977.appleII.jpg"
+            />
+
+            <header id="text-des">Apple II</header>
+            <p>
+              Sold complete with a main logic board, switching power supply,
+              keyboard, case, manual, game paddles, and cassette tape containing
+              the game Breakout, the Apple-II finds popularity far beyond the
+              hobbyist community which made up Apple’s user community until
+              then. When connected to a color television set, the Apple II
+              produced brilliant color graphics for the time. Millions of Apple
+              IIs were sold between 1977 and 1993, making it one of the
+              longest-lived lines of personal computers. Apple gave away
+              thousands of Apple IIs to school, giving a new generation their
+              first access to personal computers.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1979</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1979.atari400-800.jpg"
+            />
+
+            <header id="text-des">
+              Atari introduces its Model 400 and 800 computers
+            </header>
+            <p>
+              Shortly after delivery of the Atari VCS game console, Atari
+              designs two microcomputers with game capabilities: the Model 400
+              and Model 800. The 400 served primarily as a game console, while
+              the 800 was more of a home computer. Both faced strong competition
+              from the Apple II, Commodore PET, and TRS-80 computers. Atari's
+              8-bit computers were influential in the arts, especially in the
+              emerging DemoScene culture of the 1980s and '90s.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1981</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1981.computerprogramme.jpg"
+            />
+            <header id="text-des">
+              The Computer Programme debuts on the BBC
+            </header>
+            <p>
+              The British Broadcasting Corporation’s Computer Literacy Project
+              hoped “to introduce interested adults to the world of computers.”
+              Acorn produces a popular computer, the BBC Microcomputer System,
+              so viewers at home could follow along on their own home computers
+              as they watched the program. The machine was expandable, with
+              ports for cassette storage, serial interface and rudimentary
+              networking.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1983</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1983.lisa.jpg"
+            />
+
+            <header id="text-des">Apple introduces the Lisa computer</header>
+            <p>
+              Lisa is the first commercial personal computer with a graphical
+              user interface (GUI). It was thus an important milestone in
+              computing as soon Microsoft Windows and the Apple Macintosh would
+              soon adopt the GUI as their user interface, making it the new
+              paradigm for personal computing. The Lisa ran on a Motorola 68000
+              microprocessor and came equipped with 1 MB of RAM, a 12-inch
+              black-and-white monitor, dual 5.25-inch floppy disk drives and a 5
+              MB “Profile” hard drive. Lisa itself, and especially its GUI, were
+              inspired by earlier work at the Xerox Palo Alto Research Center.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1984</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1984.applemacintosh.jpg"
+            />
+            <header id="text-des">Apple Computer launches the Macintosh</header>
+            <p>
+              Apple introduces the Macintosh with a television commercial during
+              the 1984 Super Bowl, which plays on the theme of totalitarianism
+              in George Orwell´s book 1984. The ad featured the destruction of
+              “Big Brother” – a veiled reference to IBM -- through the power of
+              personal computing found in a Macintosh. The Macintosh was the
+              first successful mouse-driven computer with a graphical user
+              interface and was based on the Motorola 68000 microprocessor. Its
+              price was $2,500. Applications that came as part of the package
+              included MacPaint, which made use of the mouse, and MacWrite,
+              which demonstrated WYSIWYG (What You See Is What You Get) word
+              processing.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1985</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1985.pcslimited.jpg"
+            />
+
+            <header id="text-des">PC's Limited is founded</header>
+            <p>
+              In 1984, Michael Dell creates PC's Limited while still a student
+              of the University of Texas at Austin. The dorm-room headquartered
+              company sold IBM PC-compatible computers built from stock
+              components. Dell dropped out of school to focus on his business
+              and in 1985, the company produced the first computer of its own
+              design, the Turbo PC, which sold for $795. By the early 1990s,
+              Dell became one of the leading computer retailers.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1986</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1986.compaq-deskpro-386.jpg"
+            />
+
+            <header id="text-des">
+              IBM releases the first commercial RISC-based workstation
+            </header>
+            <p>
+              Compaq beats IBM to the market when it announces the Deskpro 386,
+              the first computer on the market to use Intel´s new 80386 chip, a
+              32-bit microprocessor with 275,000 transistors on each chip. At 4
+              million operations per second and 4 kilobytes of memory, the 80386
+              gave PCs as much speed and power as older mainframes and
+              minicomputers.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1988</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1988.next.jpg"
+            />
+
+            <header id="text-des">
+              Apple co-founder Steve Jobs unveils the NeXT Cube
+            </header>
+            <p>
+              Steve Jobs, forced out of Apple in 1985, founds a new company –
+              NeXT. The computer he created, an all-black cube was an important
+              innovation. The NeXT had three Motorola microprocessors and 8 MB
+              of RAM. Its base price was $6,500. Some of its other innovations
+              were the inclusion of a magneto-optical (MO) disk drive, a digital
+              signal processor and the NeXTSTEP programming environment (later
+              released as OPENSTEP).
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1989</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1989.486.jpg"
+            />
+            <header id="text-des">
+              Intel introduces the 80486 microprocessor
+            </header>
+            <p>
+              Intel released the 80486 microprocessor and the i860
+              RISC/coprocessor chip, each of which contained more than 1 million
+              transistors. The RISC microprocessor had a 32-bit integer
+              arithmetic and logic unit (the part of the CPU that performs
+              operations such as addition and subtraction), a 64-bit
+              floating-point unit, and a clock rate of 33 MHz.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">1993</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1993.newton.jpg"
+            />
+
+            <header id="text-des">Apple ships the first Newton</header>
+            <p>
+              Apple enters the handheld computer market with the Newton. Dubbed
+              a “Personal Data Assistant” by Apple President John Scully in
+              1992, the Newton featured many of the features that would define
+              handheld computers in the following decades. The handwriting
+              recognition software was much maligned for inaccuracy. The Newton
+              line never performed as well as hoped and was discontinued in
+              1998.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-right">1998</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_1998.imac.jpg"
+            />
+            <header id="text-des">
+              The iMac, a range of all-in-one Macintosh desktop computers, is
+              launched.
+            </header>
+            <p>
+              Apple makes a splash with its Bondi Blue iMac, which sells for
+              about $1,300. Customers got a machine with a 233-MHz G3 processor,
+              4GB hard drive, 32MB of RAM, a CD-ROM drive, and a 15" monitor.
+              The machine was noted for its ease-of-use and included a 'manual'
+              that contained only a few pictures and less than 20 words. As
+              Apple’s first new product under the leadership of a returning
+              Steve Jobs, many consider this the most significant step in
+              Apple's return from near-bankruptcy in the middle 1990s.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">2000</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2000.Sharp_Jphone.jpg"
+            />
+
+            <header id="text-des">First camera phone introduced</header>
+            <p>
+              Japan's SoftBank introduces the first camera phone, the J-Phone
+              J-SH04; a Sharp-manufactured digital phone with integrated camera.
+              The camera had a maximum resolution of 0.11 megapixels a 256-color
+              display, and photos could be shared wirelessly. The J-Phone line
+              would quickly expand, releasing a flip-phone version just a month
+              later. Cameras would become a significant part of most phones
+              within a year, and several countries have even passed laws
+              regulating their use.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div id="year-right">2002</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2002.Earth_simulator_ES2.jpg"
+            />
+            <header id="text-des">
+              Earth Simulator is world's fastest supercomputer
+            </header>
+            <p>
+              Developed by the Japanese government to create global climate
+              models, the Earth Simulator is a massively parallel, vector-based
+              system that costs nearly 60 billion yen (roughly $600 million at
+              the time). A consortium of aerospace, energy, and marine science
+              agencies undertook the project, and the system was built by NEC
+              around their SX-6 architecture. To protect it from earthquakes,
+              the building housing it was built using a seismic isolation system
+              that used rubber supports. The Earth Simulator was listed as the
+              fastest supercomputer in the world from 2002 to 2004.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">2003</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2003.Power_Mac_G5.jpg"
+            />
+
+            <header id="text-des">PowerMac G5 is released</header>
+            <p>
+              With a distinctive anodized aluminum case, and hailed as the first
+              true 64-bit personal computer, the Apple G5 is the most powerful
+              Macintosh ever released to that point. While larger than the
+              previous G4 towers, the G5 had comparatively limited space for
+              expansion. Virginia Tech used more than a thousand PowerMac G5s to
+              create the System X cluster supercomputer, rated #3 in November of
+              that year on the world’s TOP500 fastest computers.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div id="year-right">2005</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2005_arduino.jpg"
+            />
+            <header id="text-des">Arduino</header>
+            <p>
+              Harkening back to the hobbyist era of personal computing in the
+              1970s, Arduino begins as a project of the Interaction Design
+              Institute, Ivrea, Italy. Each credit card-sized Arduino board
+              consisted of an inexpensive microcontroller and signal connectors
+              which made Arduinos ideal for use in any application connecting to
+              or monitoring the outside world.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">2007</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2007.iphone.jpg"
+            />
+
+            <header id="text-des">The Apple iPhone is released</header>
+            <p>
+              Apple launches the iPhone - a combination of web browser, music
+              player and cell phone - which could download new functionality in
+              the form of "apps" (applications) from the online Apple store. The
+              touchscreen enabled smartphone also had built-in GPS navigation,
+              high-definition camera, texting, calendar, voice dictation, and
+              weather reports.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div id="year-right">2008</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2008.macbookair.jpg"
+            />
+
+            <header id="text-des">The MacBook Air</header>
+            <p>
+              Apple introduces their first ultra notebook – a light, thin laptop
+              with high-capacity battery. The Air incorporated many of the
+              technologies that had been associated with Apple's MacBook line of
+              laptops, including integrated camera, and Wi-Fi capabilities. To
+              reduce its size, the traditional hard drive was replaced with a
+              solid-state disk, the first mass-market computer to do so.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div id="year-left">2009</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2009.roadrunner.jpg"
+            />
+
+            <header id="text-des">
+              IBM's Roadrunner supercomputer is completed
+            </header>
+            <p>
+              The Roadrunner is the first computer to reach a sustained
+              performance of 1 petaflop (one thousand trillion floating point
+              operations per second). It used two different microprocessors: an
+              IBM POWER XCell L8i and AMD Opteron. It was used to model the
+              decay of the US nuclear arsenal, analyze financial data, and
+              render 3D medical images in real-time. An offshoot of the POWER
+              XCell8i chip was used as the main processor in the Sony
+              PlayStation 3 game console.
+            </p>
+            <span class="left-container-arrow"></span>
+          </div>
+        </li>
+
+        <li>
+          <div>
+            <div id="year-right">2010</div>
+            <img
+              id="timeline-img"
+              style="width: 400px; height: 220px"
+              src="https://images.computerhistory.org/timeline/timeline_computers_2012_appleretina.jpg"
+            />
+
+            <header id="text-des">Apple Retina Display</header>
+            <p>
+              Since the release of the Macintosh in 1984, Apple has placed
+              emphasis on high-resolution graphics and display technologies. In
+              2012, Apple introduced the Retina display for the MacBook Pro
+              laptop and iPad tablet. With a screen resolution of up to 400
+              pixels-per-inch (PPI), Retina displays approached the limit of
+              pixel visibility to the human eye. The display also used In Plane
+              Switching (IPS) technology, which allowed for a wider viewing
+              angle and improved color accuracy. The Retina display became
+              standard on most of the iPad, iPhone, MacBook, and Apple Watch
+              product lines.
+            </p>
+            <span class="right-container-arrow"></span>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </body>
 </html>

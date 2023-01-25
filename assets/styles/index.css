@@ -1,4 +1,4 @@
-body{
+body {
   width: 100vh;
   height: 100vh;
   background: #070017;
@@ -6,38 +6,45 @@ body{
   overflow: hidden;
 }
 
-
-#image-track> .image{
-
+#image-track > .image {
   max-width: 40vmin;
   height: 56vmin;
   object-fit: cover;
   object-position: 100% 50%;
-  overflow: hidden; 
-
+  overflow: hidden;
 }
 
 @keyframes imageTrackHide {
-  0%   { visibility:hidden;}
-  25%   {  visibility:hidden}
-  40%   { visibility:hidden;}
-  75%   { visibility:hidden; }
-  100%   { visibility:hidden;}
+  0% {
+    visibility: hidden;
+  }
+  25% {
+    visibility: hidden;
+  }
+  40% {
+    visibility: hidden;
+  }
+  75% {
+    visibility: hidden;
+  }
+  100% {
+    visibility: hidden;
+  }
 }
 
-#image-track{
+#image-track {
   visibility: visible;
   display: flex;
-  gap:4vmin;
+  gap: 4vmin;
   position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(-5%,-50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(-5%, -50%);
   animation: imageTrackHide;
   animation-duration: 12s;
 }
 
-nav{
+nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -47,35 +54,32 @@ nav{
   margin-top: 10px;
 }
 
-.nav-text{
+.nav-text {
   color: white;
   margin-top: 35px;
   margin-right: 10px;
   cursor: pointer;
   font-weight: bold;
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
-
 }
-.nav-text:hover{
-  border-bottom:2px solid white;
+.nav-text:hover {
+  border-bottom: 2px solid white;
 }
-.notActive{
+.notActive {
   opacity: 0.5;
 }
 
-
-#Welcome-screen{
+#Welcome-screen {
   width: 100%;
   position: absolute;
   display: flex;
-  gap:3vmin;
+  gap: 3vmin;
   padding: 10px;
   align-items: center;
   justify-content: center;
 }
 
-.falling-image{
-
+.falling-image {
   width: 100%;
   max-width: 75vmin;
   height: 30vmin;
@@ -83,74 +87,123 @@ nav{
   object-position: 100% 50%;
   overflow: hidden;
   border-radius: 5px;
-
-  
-
 }
 
-
 @keyframes fallDown {
-  0%   { visibility:visible ; left:0px; top:0px;}
-  25%  { visibility:visible ; left:0px; top:100px;}
-  50%  { visibility:visible ; left:0px; top:300px;}
-  75%  {  visibility:visible ;left:0px; top:400px;}
-  100% { visibility:visible ; left:0px; top:500px;}
- 
+  0% {
+    visibility: visible;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    visibility: visible;
+    left: 0px;
+    top: 100px;
+  }
+  50% {
+    visibility: visible;
+    left: 0px;
+    top: 300px;
+  }
+  75% {
+    visibility: visible;
+    left: 0px;
+    top: 400px;
+  }
+  100% {
+    visibility: visible;
+    left: 0px;
+    top: 500px;
+  }
 }
 
 @keyframes risingUp {
-  0%   { visibility:visible ; left:0px; top:-0px;}
-  25%  { visibility:visible ; left:0px; top:-100px;}
-  50%  { visibility:visible ; left:0px; top:-300px;}
-  75%  {  visibility:visible ;left:0px; top:-400px;}
-  100% { visibility:visible ; left:0px; top:-500px;}
+  0% {
+    visibility: visible;
+    left: 0px;
+    top: -0px;
+  }
+  25% {
+    visibility: visible;
+    left: 0px;
+    top: -100px;
+  }
+  50% {
+    visibility: visible;
+    left: 0px;
+    top: -300px;
+  }
+  75% {
+    visibility: visible;
+    left: 0px;
+    top: -400px;
+  }
+  100% {
+    visibility: visible;
+    left: 0px;
+    top: -500px;
+  }
 }
 
 @keyframes zoomingImage {
-  0%   { visibility:visible;width: 100%; height: 30vmin;}
-  25%   {  visibility:visible;width: 100%; height: 30vmin}
-  40%   { visibility:visible;width: 100%; height: 30vmin}
-  75%   { visibility:visible;width: 100%; height: 30vmin}
-  100%   { visibility:visible;transform: scale(3);}
+  0% {
+    visibility: visible;
+    width: 100%;
+    height: 30vmin;
+  }
+  25% {
+    visibility: visible;
+    width: 100%;
+    height: 30vmin;
+  }
+  40% {
+    visibility: visible;
+    width: 100%;
+    height: 30vmin;
+  }
+  75% {
+    visibility: visible;
+    width: 100%;
+    height: 30vmin;
+  }
+  100% {
+    visibility: visible;
+    transform: scale(3);
+  }
 }
 
-
-
-
-.fallingDown{
-  visibility:hidden;
+.fallingDown {
+  visibility: hidden;
   position: relative;
   animation-name: fallDown;
   animation-duration: 5s;
 }
 
-.riseUp{
-  visibility:hidden;
+.riseUp {
+  visibility: hidden;
   position: relative;
   animation-name: risingUp;
   animation-duration: 5s;
 }
 
-.zoomImage{
-  visibility:hidden;
+.zoomImage {
+  visibility: hidden;
   position: relative;
   animation: zoomingImage;
   animation-duration: 12s;
 }
 
-#centerIcon{
+#centerIcon {
   position: absolute;
-  left:50%;
-  top:50%;
-  transform: translate(0%,-50%);
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, -50%);
   z-index: 100;
-   animation: imageTrackHide;
+  animation: imageTrackHide;
   animation-duration: 12s;
 }
 
-
-
-div[id="modalContainer"]{
+div[id="modalContainer"] {
   visibility: visible;
   position: absolute;
   z-index: 10000;
@@ -163,49 +216,59 @@ div[id="modalContainer"]{
   animation-duration: 12s;
 }
 
-
-img[id="modalImage"]
-{
+img[id="modalImage"] {
   width: 100%;
   height: 100%;
 }
 
 @keyframes textRiseUp {
-  0%   {opacity: 0.2;margin-top: 100px;}
-  40%   {opacity: 0.6;margin-top: 50px}
-  75%   {opacity: 0.7;margin-top: 40}
-  100%   {opacity: 0.1;margin-top: 0px}
+  0% {
+    opacity: 0.2;
+    margin-top: 100px;
+  }
+  40% {
+    opacity: 0.6;
+    margin-top: 50px;
+  }
+  75% {
+    opacity: 0.7;
+    margin-top: 40;
+  }
+  100% {
+    opacity: 0.1;
+    margin-top: 0px;
+  }
 }
 
-div[id="modalImageDescription"]{
+div[id="modalImageDescription"] {
   color: aliceblue;
-  font-size: 50px;  
+  font-size: 50px;
   animation: textRiseUp;
   animation-duration: 2s;
 }
-div[id='modal-text-icon']{
+div[id="modal-text-icon"] {
   display: flex;
   position: absolute;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
   margin-top: 20px;
-  align-items:center;
+  align-items: center;
 }
 
-div[id='modal-text-icon'] div{
+div[id="modal-text-icon"] div {
   display: flex;
-  flex:1;
+  flex: 1;
   align-items: center;
   justify-content: center;
 }
-.modalPluseIcon{
+.modalPluseIcon {
   width: 40px;
   height: 40px;
-  font-weight: bold
+  font-weight: bold;
 }
 
-#close-modal{
+#close-modal {
   position: absolute;
   width: 35px;
   height: 30px;
@@ -215,9 +278,8 @@ div[id='modal-text-icon'] div{
   cursor: pointer;
   margin-top: 5px;
   margin-right: 20px;
- 
 }
 
-#close-modal:active{
+#close-modal:active {
   background-color: black;
 }

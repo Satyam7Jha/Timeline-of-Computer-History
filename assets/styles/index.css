@@ -50,8 +50,10 @@ nav {
   justify-content: center;
   width: 100%;
   position: absolute;
-  z-index: 10000000;
+  z-index: 10001;
+  background-color: red;
   margin-top: 10px;
+  height: 0px;
 }
 
 .nav-text {
@@ -63,7 +65,7 @@ nav {
   text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
 }
 .nav-text:hover {
-  border-bottom: 2px solid white;
+  /* border-bottom: 2px solid white; */
 }
 .notActive {
   opacity: 0.5;
